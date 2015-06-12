@@ -114,6 +114,7 @@ hero-section{
 content-section{
 	display: block;
 	position: relative;
+	float: left;
 	width: 100%; height: auto;
 	padding: 140px 68px 50px; margin: 0;
 	text-align: center;
@@ -444,6 +445,7 @@ content-title {
 footer-bar{
 	display:inline-block;
 	position:relative;
+	float: left;
 
 	width:100%;
 	height:80px;
