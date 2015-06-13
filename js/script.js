@@ -17,12 +17,14 @@ $(window).ready(function() {
 // });
 
 function checkHash(){
-	var hash = window.location.hash;
+	var hash = window.location.hash+'';
 	hash = hash.replace("#","");
+	setActiveTab(hash);
+}
 
-	// console.log(hash);
+
+function setActiveTab(hash){
 	$("header-bar .button").removeClass("current");
-
 	if(hash == ""){
 		$("header-bar .button.top").removeClass("current");
 	} else {
@@ -47,7 +49,8 @@ $(window).scroll(function() {
 		}
 	}
 	// console.log( active );
-	window.location.hash = active;
+	// window.location.hash = active;
+	setActiveTab(active);
 });
 
 
